@@ -1,0 +1,81 @@
+
+git init //makes repository able to use git commands
+git clone url for empty folder
+git remote add origin https://github.com/emondragons/newprojects
+
+
+git add README.md
+git commit -m "first commit"
+		or *** git commit -am "first commit"    ***
+git push -u origin master  //used to upload local repository content to remote repository
+
+
+
+branching
+1st git branch develop //to create a branch
+2nd git commit -m "first commit"
+	git branch // to show which branch you are on
+3rd git checkout develop
+4rd git log //to see commits
+5th git checkout -b feature //based off branch
+
+git status
+
+git commit -am "added something new"
+
+get checkout master
+
+
+
+
+git merge folder
+	git log
+ 	//create new commit
+	git show commit string of about 7 characters
+
+gitflow addon
+
+
+
+
+create  a new repository
+echo "# m" >> README.md
+create folder and file
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/emondragons/m.git  //points local file to github remote folder
+git push -u origin master
+
+
+create repository on github
+clone == git clone <githubLink>
+*make or edit files on local cloned direcory*
+git status to check status 
+git add --all or git add <fileName>
+git commit -m "initial commit"
+git push -u origin master
+git checkout -b branchName
+*edit files*
+git add --all or git add fileName
+git commit -m "2nd note"
+*no push command to merge*
+git checkout master
+git merge "branchname"
+*only merged on local machine until pushed**
+git checkout "branchname"
+git checkout -b "newbranchname"
+make edits to file
+git add filename 
+
+
+
+Step 1: From your project repository, check out a new branch and test the changes.
+
+git checkout -b smilingKnite-dev_ty dev_ty
+git pull https://github.com/smilingKnite/firstproject.git dev_ty
+Step 2: Merge the changes and update on GitHub.
+
+git checkout dev_ty
+git merge --no-ff smilingKnite-dev_ty
+git push origin dev_ty

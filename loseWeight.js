@@ -1,0 +1,1 @@
+loseWeight(fido, 10);
